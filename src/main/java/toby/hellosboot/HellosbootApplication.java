@@ -26,6 +26,8 @@ public class HellosbootApplication {
                     resp.setStatus(HttpStatus.OK.value());
                     resp.setHeader(HttpHeaders.CONTENT_TYPE, MediaType.TEXT_PLAIN_VALUE);
                     resp.getWriter().print("Hello " + name);
+
+
                 }
             }).addMapping("/hello");
         });
